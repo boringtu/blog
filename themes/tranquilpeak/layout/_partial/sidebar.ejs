@@ -33,6 +33,13 @@
                             <% if (theme.sidebar[i][n].url.indexOf("/") === 0 && theme.sidebar[i][n].url.length === 1) { %> href="<%- url_for(' ') %>"
                             <% } else if (theme.sidebar[i][n].url.indexOf("/") === 0) { %> href="<%- url_for(theme.sidebar[i][n].url.substr(1)) %>"
                             <% } else { %> href="<%- url_for(theme.sidebar[i][n].url) %>"<% } %>
+														<% if (theme.sidebar[i][n].target) { %>
+															<% if (theme.sidebar[i][n].target === 'yes') { %>
+																target="_blank"
+															<% } else { %>
+																target="<%= theme.sidebar[i][n].target %>"
+															<% } %>
+														<% } %>
                             title="<%= __(theme.sidebar[i][n].title) %>"
                         >
                     <% } %>
