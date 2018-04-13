@@ -1,0 +1,18 @@
+<div class="<%= (classes ? classes.join(' ') : '') %>">
+<% if (post.top) { %>
+	<i class="fa fa-large fa-thumb-tack"></i>
+	<span style="font-weight: bold;">Top</span>
+	<span class="post-meta-divider">|</span>
+<% } %>
+	<time datetime="<%= post.date.format() %>">
+<% if (post.lang) { %>
+	<%= post.date.locale('en').format(__('date_format')) %>
+<% } else { %>
+	<%= post.date.locale('en').format(__('date_format')) %>
+<% } %>
+	</time>
+<% if ((post.categories) && (post.categories.length > 0)) { %>
+	<span><%= __('post.categorized_in') %> </span>
+	<%- partial('category', {categories: post.categories}) %>
+<% } %>
+</div>

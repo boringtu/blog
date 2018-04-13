@@ -1,0 +1,83 @@
+# 在所有地方显示的 date 格式化
+date_format: "MMM Do, YYYY"
+
+global:
+    home: "Home"
+    categories: "Categories"
+    category: "Category"
+    tags: "Tags"
+    tag: "Tag"
+    archives: "Archives"
+    search: "Search"
+    about: "About"
+    author_picture: "作者的图片"
+    github: "GitHub"
+    demo: "Demo"
+    stack_overflow: "Stack Overflow"
+    codefights: "CodeFights"
+    sourcecode: "Source Code"
+    gitter: "Gitter"
+    twitter: "Twitter"
+    facebook: "Facebook"
+    google_plus: "Google Plus"
+    linkedin: "LinkedIn"
+    mail: "Email"
+    resume: "Resume"
+    rss: "RSS"
+    share_on_facebook: "分享到 Facebook"
+    share_on_twitter: "分享到 Twitter"
+    share_on_google_plus: "分享到 Google+"
+    share_on_weibo: "分享到 Weibo"
+    share_on_qq: "分享到 QQ"
+    share_on_qzone: "分享到 Qzone"
+    share_on_renren: "分享到 Renren"
+    share_on_vk: "分享到 VK"
+    share_on_odnoklassniki: "分享到 Odnoklassniki"
+    search_category: "Search category"
+    search_tag: "Search tag"
+    search_date: "Search date (YYYY/MM/DD)"
+    posts_found:
+        zero: "没有找到文章"
+        one: "找到 1 篇文章"
+        other: "找到 {n} 篇文章"
+    categories_found:
+        zero: "没有找到分类"
+        one: "找到 1 个分类"
+        other: "找到 {n} 个分类"
+    tags_found:
+        zero: "没有找到标签"
+        one: "找到 1 个标签"
+        other: "找到 {n} 个标签"
+
+
+pagination:
+    page: "第 %d 页"
+    of: "共 %d 页"
+    newer_posts: "上一页"
+    older_posts: "下一页"
+    previous: "上一篇"
+    next: "下一篇"
+
+post:
+    no_title : "无标题"
+    categorized_in: "发布在"
+    tagged_in: "标签"
+    toc: "目录"
+    read_more: "阅读全文"
+    go_to_website: "转到"
+    comment_and_share: "评论和共享"
+    gallery: "画廊"
+    image:
+        one: "图片"
+        other: "%d 图片"
+
+author:
+    # 你的个人简介 (支持 Markdown 和 HTML 语法)
+    bio: "在通往全栈的路上，渐行渐远。。"
+    # 你的工作简介
+    job: ""
+    # 是否有简历页
+    resume: yes
+    # 签名
+    signature: "```\r ______              __               _______        \r|   __ \\.-----.----.|__|.-----.-----.|_     _|.--.--.\r|   __ <|  _  |   _||  ||     |  _  |  |   |  |  |  |\r|______/|_____|__|  |__||__|__|___  |  |___|  |_____|\r                              |_____|                \r```"
+
