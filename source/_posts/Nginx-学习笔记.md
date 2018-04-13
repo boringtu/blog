@@ -1,6 +1,8 @@
 ---
 title: Nginx 学习笔记
 date: 2017-08-31 00:00:00
+thumbnailImage: NGINX_logo.png
+thumbnailImagePosition: bottom
 categories:
   - Technology
   - O & M
