@@ -254,35 +254,3 @@ $tooltip: (
     // Don't change this value, used to vertically center the tooltip content
     'arrow-height': 12px
 );
-
-// Custom Style By BoringTu
-body #about #about-card {
-	max-width: 640px;
-}
-#about-card-signature code {
-	text-align: left;
-	font-size: 12px;
-	width: 420px;
-	margin: 0 auto;
-	overflow: hidden;
-	background: none;
-	background-image: linear-gradient(120deg, #66a6ff 0%, #f4d03f 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-#main {
-	background-image: url(/assets/images/pixels.png) !important;
-	background-repeat: repeat !important;
-	//background-color: rgba(140, 211, 250, 1) !important;
-	.postShorten-group.main-content-wrap {
-		//background: #fff;
-	}
-	#categories-archives,
-	#tags-archives,
-	#archives {
-		//background-color: #fff;
-	}
-	&.hasCover {
-		//background: #fff !important;
-	}
-}

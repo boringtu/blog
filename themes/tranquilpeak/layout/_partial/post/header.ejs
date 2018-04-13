@@ -1,13 +1,25 @@
 <div class="post-header main-content-wrap <%= (post.metaAlignment ? 'text-' + post.metaAlignment : 'text-left') %>">
     <% if (post.link) { %>
         <h1>
+						<span class="article-title">
             <a class="link" href="<%- url_for(post.link) %>" target="_blank" rel="noopener">
                 <%= post.title || '(' + __('post.no_title') + ')' %>
             </a>
+						</span>
+					<% if (post.subtitle) { %>
+						<br>
+						<span class="article-subtitle"><%= post.subtitle %></span>
+					<% } %>
         </h1>
     <% } else { %>
         <h1 class="post-title">
+						<span class="article-title">
             <%= post.title || '(' + __('post.no_title') + ')' %>
+						</span>
+					<% if (post.subtitle) { %>
+						<br>
+						<span class="article-subtitle"><%= post.subtitle %></p>
+					<% } %>
         </h1>
     <% } %>
     <% if (post.meta === undefined || post.meta) { %>

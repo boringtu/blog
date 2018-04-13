@@ -1,0 +1,77 @@
+// Highlight.js custom theme
+// Follow guidelines
+// 1. Uncomment the block just below - remove `/*` and `*/`
+// 2. Fill `background`, `color`, `border-right-color` properties
+// with properties of `.hljs` CSS class of your theme
+// 3. Put your theme where it's indicated just below
+// 4. Remove `.hljs {...}` rules
+// 5. Remove `hljs-` of all CSS class name. E.g : `.hljs-comment` becomes `.comment`
+// 6. Comment line 61 (`'themes/tranquilpeak',`) of `source/_css/tranquilpeak.scss` file
+// 7. Run `grunt buildProd` to build the theme and see the result
+
+// Default code block
+// pre > code
+    background:
+    color:
+
+// Default inline code
+// code {
+    background-color:
+
+// Tabbed code block tab
+// If your theme is dark then use a lighter background
+// to see clearly which tab is active
+// .codeblock--tabbed figcaption .tab.active
+    background:
+    color:
+
+// highlight code block
+//figure.highlight, .codeblock
+    background:
+    color:
+    figcaption
+        background:
+        color:
+    .gutter
+        background:
+        border-right-color:
+        .line
+            color:
+    // PUT YOUR THEME HERE
+
+// Custom Style By BoringTu
+body
+	#main
+		background-image: url(/assets/images/pixels.png)
+		background-repeat: repeat
+		//background-color: rgba(140, 211, 250, 1)
+		.postShorten-group.main-content-wrap
+			//background: #fff
+		#categories-archives,
+		#tags-archives,
+		#archives
+			//background-color: #fff
+		&.hasCover
+			//background: #fff
+	#about #about-card
+		max-width: 640px
+	#about-card-signature code
+		text-align: left
+		font-size: 12px
+		width: 420px
+		margin: 0 auto
+		overflow: hidden
+		background: none
+		background-image: linear-gradient(120deg, #66a6ff 0%, #f4d03f 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+
+.post-header
+	.post-title
+		.article-title
+			font-size: map-get($headings-font-size, h1) + 3.7rem
+			line-height: 1.3em
+		.article-subtitle
+			font-size: map-get($headings-font-size, h1) + 1rem
+			line-height: 1em
+			color: rgba(121, 121, 121, 1.00)
