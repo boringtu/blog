@@ -1,0 +1,28 @@
+{
+  "name": "Resume",
+  "version": "1.0.0",
+  "authors": [
+    "BoringTu<mail@BoringTu.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "js-base64": "2.1.9",
+    "requirejs": "~2.1.20",
+    "text": "~2.0.14",
+    "moment": "^2.17.1",
+    "jquery-qrcode": "jquery.qrcode#^0.14.0",
+    "js-md5": "^2.4.0",
+    "clipboard": "^1.5.16"
+  }
+}

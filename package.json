@@ -5,6 +5,43 @@
   "hexo": {
     "version": "3.4.4"
   },
+  "path": {
+    "src_resume": "source/_resume/",
+    "dist_resume": "source/resume/"
+  },
+  "bower": {
+    "copyfiles": {
+      "jquery.min.js": "jquery/dist/jquery.min.js",
+      "base64.min.js": "js-base64/base64.min.js",
+      "md5.min.js": "js-md5/js/md5.min.js",
+      "jquery.qrcode.min.js": "jquery-qrcode/dist/jquery-qrcode.min.js",
+      "moment.min.js": "moment/min/moment.min.js",
+      "clipboard.min.js": "clipboard/dist/clipboard.min.js"
+    },
+    "uglifyfiles": {},
+    "cssminfiles": {},
+    "removefiles": []
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-bowercopy": "^1.2.3",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.1.1",
+    "less-plugin-autoprefix": "^1.4.2",
+    "load-grunt-tasks": "^3.3.0",
+    "pug": "^2.0.0-rc.4"
+  },
   "dependencies": {
     "hexo": "^3.2.0",
     "hexo-algoliasearch": "^0.3.0",

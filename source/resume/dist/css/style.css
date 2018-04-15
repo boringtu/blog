@@ -1,0 +1,188 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, "微软雅黑"; }
+
+a {
+  color: #417fee; }
+
+.leftPanel {
+  float: left; }
+
+.rightPanel {
+  float: right; }
+
+.page {
+  height: 976px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px 40px; }
+
+header {
+  border-bottom: 3px solid #636363; }
+  header .leftPanel {
+    padding-left: 10px; }
+    header .leftPanel h1 {
+      font-size: 21px;
+      line-height: 21px;
+      font-weight: normal;
+      margin-top: 4px; }
+    header .leftPanel h2 {
+      color: #808080;
+      font-size: 12px;
+      line-height: 20px;
+      padding-bottom: 4px; }
+  header .rightPanel {
+    padding-right: 6px;
+    font-size: 12px;
+    line-height: 12px; }
+    header .rightPanel p {
+      text-align: right;
+      position: relative;
+      line-height: 15px; }
+      header .rightPanel p > * {
+        vertical-align: middle;
+        float: right; }
+      header .rightPanel p .fa {
+        text-align: center;
+        width: 18px;
+        position: absolute;
+        right: 0; }
+      header .rightPanel p .text {
+        padding-right: 18px; }
+      header .rightPanel p[data-type="mobile"] .fa {
+        font-size: 18px;
+        line-height: 14px; }
+      header .rightPanel p[data-type="email"] .fa {
+        font-size: 14px;
+        line-height: 14px; }
+      header .rightPanel p[data-type="blog"] .fa {
+        font-size: 14px;
+        line-height: 12px; }
+
+.description {
+  padding: 20px 12px 10px;
+  position: relative; }
+  .description img {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 12px;
+    border-radius: 50%; }
+  .description p {
+    padding: 8px 12px 12px 130px;
+    font-size: 12px; }
+    .description p span.line {
+      display: block;
+      height: 3px;
+      width: 28px;
+      background: #636363;
+      margin-bottom: 8px; }
+
+.widget {
+  padding-bottom: 20px; }
+  .widget h2 {
+    color: #999;
+    border-bottom: 2px solid #dfdfdf;
+    padding-left: 8px;
+    font-size: 15px; }
+  .widget .item {
+    display: flex;
+    justify-content: space-between; }
+    .widget .item .leftPanel {
+      width: 34%;
+      padding-top: 20px;
+      position: relative; }
+      .widget .item .leftPanel .line {
+        width: 86%;
+        height: 1px;
+        border-width: 0 0 1px 0;
+        border-color: #e2e2e2;
+        border-style: dashed;
+        bottom: 0;
+        position: absolute;
+        z-index: 1; }
+    .widget .item .rightPanel {
+      width: 66%;
+      padding-top: 12px; }
+      .widget .item .rightPanel .line {
+        width: 100%;
+        height: 1px;
+        border-width: 0 0 1px 0;
+        border-color: #e2e2e2;
+        border-style: dashed;
+        margin-top: 10px;
+        position: relative;
+        top: 10px; }
+    .widget .item .widgetTitle {
+      font-size: 16px;
+      padding: 0 8px; }
+    .widget .item .widgetSubtitle {
+      font-size: 12px;
+      color: #aaa;
+      padding-left: 8px;
+      padding-bottom: 12px; }
+      .widget .item .widgetSubtitle .fa {
+        margin-left: 4px; }
+    .widget .item .title {
+      font-size: 13px;
+      position: relative;
+      background: #fff; }
+    .widget .item .position {
+      float: left;
+      color: #333;
+      font-weight: bold; }
+    .widget .item .section {
+      float: right;
+      color: #333; }
+    .widget .item .content {
+      font-size: 12px;
+      color: #666;
+      letter-spacing: -0.5px; }
+  .widget .skillBox {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 45px; }
+    .widget .skillBox > div {
+      width: 50%; }
+      .widget .skillBox > div + div {
+        margin-left: 24px; }
+    .widget .skillBox .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .widget .skillBox .item .skillName {
+        font-size: 14px; }
+      .widget .skillBox .item .skillValue {
+        height: 8px;
+        width: 120px;
+        border-radius: 4px;
+        background: #e8e8e8; }
+        .widget .skillBox .item .skillValue .cover {
+          height: 100%;
+          background: #30a898;
+          border-radius: 4px; }
+      .widget .skillBox .item[data-percent="1"] .cover {
+        width: 10%; }
+      .widget .skillBox .item[data-percent="2"] .cover {
+        width: 20%; }
+      .widget .skillBox .item[data-percent="3"] .cover {
+        width: 30%; }
+      .widget .skillBox .item[data-percent="4"] .cover {
+        width: 40%; }
+      .widget .skillBox .item[data-percent="5"] .cover {
+        width: 50%; }
+      .widget .skillBox .item[data-percent="6"] .cover {
+        width: 60%; }
+      .widget .skillBox .item[data-percent="7"] .cover {
+        width: 70%; }
+      .widget .skillBox .item[data-percent="8"] .cover {
+        width: 80%; }
+      .widget .skillBox .item[data-percent="9"] .cover {
+        width: 90%; }
+      .widget .skillBox .item[data-percent="10"] .cover {
+        width: 100%; }
+  .widget[data-type="projects_experience"] .widgetTitle {
+    font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */
