@@ -7,7 +7,7 @@ html
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		meta(name="generator" content="BoringTu")
-		title 个人简历 - 李安然（PDF版）
+		title 个人简历 - 李安然
 		meta(name="author" content="BoringTu")
 		link(rel="icon" href="/assets/images/favicon.ico")
 
@@ -29,36 +29,32 @@ html
 	body
 		//- Page 1
 		.page
-			header.clear
-				.leftPanel
-					h1
-						strong 李
-						| &nbsp;
-						span 安然
-					h2 Web前端工程师、全栈工程师（伪）
-				.rightPanel
-					p.clear(data-type="mobile")
-						span.fa.fa-mobile
-						span.text +(86) 18610241204
-					p.clear(data-type="email")
-						span.fa.fa-at
-						span.text work@BoringTu.com
-					p.clear(data-type="blog")
-						span.fa.fa-home
-						span.text: a(href="https://boringtu.com" target="_blank") https://BoringTu.com
-			.description
-				img(src="images/head.jpg" width="90")
-				p
-					span.line
-					| - 从事程序开发8年，Java入行，后转前端<br>- 前端开发7年，前端负责人工作3年，技术总监1年<br>- 有带人经验，有良好的大局观，乐于学习新技术<br>- 目前定位仍以前端为主，职业规划方向是全栈开发
+			include src/templates/head.pug
 
 			.widget(data-type="work_experience")
 				h2 WORK EXPERIENCE
 				.item
 					.leftPanel
-						h3.widgetTitle 菲律宾某游戏公司
+						h3.widgetTitle 阿尔法创意
 						p.widgetSubtitle
-							| 菲律宾
+							| 深圳
+							span.fa.fa-map-marker
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端负责人
+							span.title.section 2018.03·至今
+						p.content.
+							前端项目框架的搭建（Vue-Cli3）<br>
+							负责所有前端项目的开发工作<br>
+							前端项目主要开发人员<br>
+							参与接口的设计与服务器的环境配置
+				.item
+					.leftPanel
+						h3.widgetTitle 创盛恒
+						p.widgetSubtitle
+							| 菲律宾 & 深圳
 							span.fa.fa-map-marker
 						.line
 					.rightPanel
@@ -67,18 +63,19 @@ html
 							span.title.position 前端负责人 & 技术总监
 							span.title.section 2016.11·2018.02
 						p.content.
-							负责技术部各组间的协作工作；<br>
-							分析项目部署及运行时出现问题的原因并以解决或提供解决方案；<br>
-							主要游戏算法的实现；<br>
-							前端项目框架的搭建；<br>
-							前端项目主要开发人员（前端组共三人）；<br>
-							在现有前端项目基础上新增Node后端项目（框架搭建和开发）
+							主要游戏算法的实现（用到交并集，阶乘，排列组合等基本算法）<br>
+							前端项目框架的搭建（Backbone + Grunt）<br>
+							前端项目主要开发人员<br>
+							分析项目所有模块中出现问题的原因并加以解决或提供解决方案<br>
+							服务器环境的配置（系统搭建，PM2，Nginx，NodeJS等）<br>
+							在现有前端项目基础上扩展NodeJS后端模块<br>
+							负责技术部各组间的协作工作
 
 				.item
 					.leftPanel
 						h3.widgetTitle 易商云
 						p.widgetSubtitle
-							| 厦门，福建
+							| 厦门
 							span.fa.fa-map-marker
 						.line
 					.rightPanel
@@ -87,15 +84,14 @@ html
 							span.title.position 前端负责人
 							span.title.section 2015.07·2016.10
 						p.content.
-							担任前端组组长，项目前端负责人<br>
-							负责pc浏览器端目前仅有的两个项目前端框架的搭建及二次开发<br>
-							协助后台开发人员解决各种问题
+							负责pc端两个项目前端框架的搭建及后续二次开发<br>
+							协助后台开发人员排查和解决问题
 
 				.item
 					.leftPanel
 						h3.widgetTitle 爱唯光石
 						p.widgetSubtitle
-							| 厦门，福建
+							| 厦门
 							span.fa.fa-map-marker
 						.line
 					.rightPanel
@@ -124,7 +120,7 @@ html
 
 				.item
 					.leftPanel
-						h3.widgetTitle 国网富达
+						h3.widgetTitle 国家电网
 						p.widgetSubtitle
 							| 北京
 							span.fa.fa-map-marker
@@ -133,26 +129,13 @@ html
 						.line
 						.clear
 							span.title.position 前端工程师 & Java工程师
-							span.title.section 2011.11·2013.03
+							span.title.section 2010.09·2013.03
 						p.content.
+							“国家电网 财务集约化 协同平台系统”的全栈开发工作<br>
+							“国家电网 财务易用化 财务工作台”的协助开发与维护工作<br>
 							“国家电网 输变电设备状态信息高级应用系统”前端框架设计与开发<br>
 							“国家电网 河南尖山II期气象监测系统”全栈的设计与开发
 
-				.item
-					.leftPanel
-						h3.widgetTitle 中电普华
-						p.widgetSubtitle
-							| 北京
-							span.fa.fa-map-marker
-						.line
-					.rightPanel
-						.line
-						.clear
-							span.title.position Java工程师
-							span.title.section 2010.09·2011.11
-						p.content.
-							“国家电网 财务集约化 协同平台系统”的全栈开发工作<br>
-							“国家电网 财务易用化 财务工作台”的协助开发与维护工作
 
 			.widget(data-type="projects_experience")
 				h2 SKILLS
@@ -163,26 +146,15 @@ html
 								| -&nbsp;
 								strong JavaScript
 							.skillValue: .cover
+						.item(data-percent="10")
+							.skillName
+								| -&nbsp;
+								strong CoffeeScript
+							.skillValue: .cover
 						.item(data-percent="7")
 							.skillName
 								| -&nbsp;
 								strong NodeJS
-							.skillValue: .cover
-						.item(data-percent="7")
-							.skillName
-								| -&nbsp;
-								strong Shell
-							.skillValue: .cover
-						.item(data-percent="8")
-							.skillName
-								| -&nbsp;
-								strong OS X
-							.skillValue: .cover
-					div
-						.item(data-percent="9")
-							.skillName
-								| -&nbsp;
-								strong CoffeeScript
 							.skillValue: .cover
 						.item(data-percent="8")
 							.skillName
@@ -192,7 +164,23 @@ html
 						.item(data-percent="7")
 							.skillName
 								| -&nbsp;
+								strong Shell
+							.skillValue: .cover
+					div
+						.item(data-percent="9")
+							.skillName
+								| -&nbsp;
+								strong VueJS
+							.skillValue: .cover
+						.item(data-percent="7")
+							.skillName
+								| -&nbsp;
 								strong Vim
+							.skillValue: .cover
+						.item(data-percent="8")
+							.skillName
+								| -&nbsp;
+								strong OS X
 							.skillValue: .cover
 						.item(data-percent="7")
 							.skillName
@@ -202,28 +190,7 @@ html
 
 		//- Page 2
 		.page
-			header.clear
-				.leftPanel
-					h1
-						strong 李
-						| &nbsp;
-						span 安然
-					h2 Web前端工程师、全栈工程师（伪）
-				.rightPanel
-					p.clear(data-type="mobile")
-						span.fa.fa-mobile
-						span.text +(86) 18610241204
-					p.clear(data-type="email")
-						span.fa.fa-at
-						span.text work@BoringTu.com
-					p.clear(data-type="blog")
-						span.fa.fa-home
-						span.text: a(href="https://boringtu.com" target="_blank") https://BoringTu.com
-			.description
-				img(src="images/head.jpg" width="90")
-				p
-					span.line
-					| - 从事程序开发8年，Java入行，后转前端<br>- 前端开发7年，前端负责人工作3年，技术总监1年<br>- 有带人经验，有良好的大局观，乐于学习新技术<br>- 目前定位仍以前端为主，职业规划方向是全栈开发
+			include src/templates/head.pug
 
 			.widget(data-type="projects_experience")
 				h2 PROJECTS EXPERIENCE
@@ -231,7 +198,7 @@ html
 					.leftPanel
 						h3.widgetTitle 游戏平台
 						p.widgetSubtitle
-							| 菲律宾某游戏公司
+							| 创盛恒
 							span.fa.fa-building
 						.line
 					.rightPanel
@@ -254,7 +221,8 @@ html
 							span.title.position 前端负责人
 							span.title.section 2016.08·2016.10
 						p.content.
-							与技术副经理、开发主管共同设计项目的各个部分，承担本项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
+							产品整体升级，重新开发第二版<br>
+							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
 				.item
 					.leftPanel
 						h3.widgetTitle 运营支撑平台（V2）
@@ -268,7 +236,8 @@ html
 							span.title.position 前端负责人
 							span.title.section 2016.05·2016.07
 						p.content.
-							与技术副经理、开发主管共同设计项目的各个部分，承担本项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
+							产品整体升级，重新开发第二版<br>
+							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
 				.item
 					.leftPanel
 						h3.widgetTitle 易商中心（V1）
@@ -282,7 +251,7 @@ html
 							span.title.position 前端负责人
 							span.title.section 2016.03·2016.05
 						p.content.
-							与开发主管共同设计项目的各个部分，承担本项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
+							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
 				.item
 					.leftPanel
 						h3.widgetTitle 运营支撑平台（V1）
@@ -296,7 +265,7 @@ html
 							span.title.position 前端负责人
 							span.title.section 2015.07·2016.02
 						p.content.
-							当时厦门分公司当时刚成立，由我与技术总监二人，共同设计本项目的各个部分。本人承担本项目前端框架的设计、搭建，及开发，并协助定制接口规范，以及协助后台人员确定和解决后台使用的技术及难点。搭建公司git代码仓库，并撰写说明文档等工作。
+							承担项目前端框架的设计、搭建，及开发，并协助定制接口规范，以及协助后台人员确定和解决后台使用的技术及难点。搭建公司git代码仓库，并撰写说明文档等工作。
 				.item
 					.leftPanel
 						h3.widgetTitle 电信翼比特管理中心
@@ -310,7 +279,7 @@ html
 							span.title.position 前端负责人
 							span.title.section 2014.03·2015.07
 						p.content.
-							负责电信翼比特（宽带提速）项目的前端设计和开发，以及公司旗下其他项目的维护工作。
+							负责电信翼比特（宽带提速）项目的前端设计和开发，以及其他项目的开发和维护工作。
 				.item
 					.leftPanel
 						h3.widgetTitle 孔夫子旧书网
@@ -328,28 +297,7 @@ html
 
 		//- Page 3
 		.page
-			header.clear
-				.leftPanel
-					h1
-						strong 李
-						| &nbsp;
-						span 安然
-					h2 Web前端工程师、全栈工程师（伪）
-				.rightPanel
-					p.clear(data-type="mobile")
-						span.fa.fa-mobile
-						span.text +(86) 18610241204
-					p.clear(data-type="email")
-						span.fa.fa-at
-						span.text work@BoringTu.com
-					p.clear(data-type="blog")
-						span.fa.fa-home
-						span.text: a(href="https://boringtu.com" target="_blank") https://BoringTu.com
-			.description
-				img(src="images/head.jpg" width="90")
-				p
-					span.line
-					| - 从事程序开发8年，Java入行，后转前端<br>- 前端开发7年，前端负责人工作3年，技术总监1年<br>- 有带人经验，有良好的大局观，乐于学习新技术<br>- 目前定位仍以前端为主，职业规划方向是全栈开发
+			include src/templates/head.pug
 
 			.widget(data-type="projects_experience")
 				h2 PROJECTS EXPERIENCE
@@ -357,13 +305,13 @@ html
 					.leftPanel
 						h3.widgetTitle 国网输变电设备状态信息高级应用系统
 						p.widgetSubtitle
-							| 国网富达
+							| 国家电网
 							span.fa.fa-building
 						.line
 					.rightPanel
 						.line
 						.clear
-							span.title.position 前端工程师，Java工程师
+							span.title.position 前端工程师 & Java工程师
 							span.title.section 2012.05·2013.03
 						p.content.
 							设计并开发针对性系统Web框架，承担对系统Web方面升级及维护工作，协助各子模块的指导、开发及调试工作，协助开发输变电设备状态评价、缺陷和故障诊断等模块的前台和后台系统。
@@ -371,13 +319,13 @@ html
 					.leftPanel
 						h3.widgetTitle 国网河南尖山II期气象监测系统
 						p.widgetSubtitle
-							| 国网富达
+							| 国家电网
 							span.fa.fa-building
 						.line
 					.rightPanel
 						.line
 						.clear
-							span.title.position 前端工程师，Java工程师
+							span.title.position 前端工程师 & Java工程师
 							span.title.section 2011.11·2012.03
 						p.content.
 							根据需求文档以及项目经理的意见和建议，独立设计和开发（包括Web前端框架设计、页面样式设计、后台逻辑代码、数据库设计）。
@@ -385,13 +333,13 @@ html
 					.leftPanel
 						h3.widgetTitle 国网财务易用化工作台
 						p.widgetSubtitle
-							| 中电普华
+							| 国家电网
 							span.fa.fa-building
 						.line
 					.rightPanel
 						.line
 						.clear
-							span.title.position 前端工程师，Java工程师
+							span.title.position 前端工程师 & Java工程师
 							span.title.section 2011.10·2011.11
 						p.content.
 							页面及后台各部分的功能设计、开发和调试工作，以及整合项目的调试工作。
@@ -399,7 +347,7 @@ html
 					.leftPanel
 						h3.widgetTitle 国网财务集约化协同平台
 						p.widgetSubtitle
-							| 中电普华
+							| 国家电网
 							span.fa.fa-building
 						.line
 					.rightPanel
@@ -409,3 +357,43 @@ html
 							span.title.section 2010.09·2011.10
 						p.content.
 							承担平台系统的整个查询模块、待办信息模块、已处理业务状态跟踪、凭证生成、用户权限以及总部与网省间数据的下达和同步模块的设计、开发和维护工作。
+
+			.widget(data-type="tech_stack")
+				h2 TECHNOLOGY STACK #[i （插件、工具库等已省略）]
+				.box
+					ul
+						li JavaScript
+						li CoffeeScript
+						li VueJS(Vue-Cli3)
+						li Nginx
+						li NodeJS
+						li PM2
+						li Webpack
+						li Grunt
+						li Backbone
+					ul
+						li Shell
+						li Vim
+						li Npm
+						li Bower
+						li Cordova
+						li DCloud
+						li OS X
+						li Linux
+						li Markdown
+					ul
+						li Express
+						li Pug/DoT/Handlebars
+						li Sass/Stylus/Less
+						li React #[i # 学习中]
+						li Docker #[i # 学习中]
+						li Cocos2d-JS #[i # 学习中]
+						li Python #[i # 学习中]
+						li C++ #[i # 学习中]
+						li Raspberry Pi #[i # 折腾中]
+
+			.widget(data-type="description")
+				h2 DESCRIPTION
+				.box
+					p 选择前端是因为 JavaScript 的弱语言先天优势，无论是执行效率，还是维护、扩展性，都很依赖编写者的水平，可玩度很高。后来出了 NodeJS，发现可以玩的东西更多了，做过 Express 的项目，写过 Shell 脚本，目前在折腾 Raspberry Pi。
+					p 一直走在通往全栈攻城师的不归路上，喜欢挑战自我。

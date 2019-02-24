@@ -9,9 +9,12 @@ a
 .page
 	height: 976px
 	width: 600px
-	margin: 0 auto
+	margin: 40px auto 80px
 	padding: 30px 40px
-	border: 1px solid
+	&:first-child
+		margin-top: 0
+	&:last-child
+		margin-bottom: 0
 header
 	border-bottom: 3px solid #636363
 	.leftPanel
@@ -82,6 +85,12 @@ header
 		border-bottom: 2px solid #dfdfdf
 		padding-left: 8px
 		font-size: 15px
+		i
+			font-style: italic
+			font-weight: normal
+			font-size: 12px
+			float: right
+			color: #aaa
 	.item
 		display: flex
 		justify-content: space-between
@@ -179,7 +188,31 @@ header
 				width: 90%
 			&[data-percent="10"] .cover
 				width: 100%
+
 	&[data-type="projects_experience"] .widgetTitle
 		font-size: 14px
 
+	&[data-type="tech_stack"]
+		.box
+			display: flex
+			justify-content: space-between
+			padding-top: 20px
+		ul
+			width: 33.33%
+			li
+				list-style: inside circle
+				font-size: 14px
+				line-height: 20px
+				i
+					font-style: italic
+					color: #aaa
+					font-size: 12px
+
+	&[data-type="description"]
+		.box
+			padding-top: 20px
+		p
+			font-size: 14px
+			line-height: 20px
+			text-indent: 2em
 

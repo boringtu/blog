@@ -15,7 +15,7 @@ module.exports = (grunt) ->
 				tasks: ['newer:copy']
 			sass:
 				files: [
-					'<%= pkg.path.src_resume %>src/css/**'
+					'<%= pkg.path.dist_resume %>src/css/**'
 				]
 				tasks: ['newer:sass']
 
@@ -61,7 +61,7 @@ module.exports = (grunt) ->
 			dist:
 				files: [
 					expand: true
-					cwd: '<%= pkg.path.src_resume %>src/css/'
+					cwd: '<%= pkg.path.dist_resume %>src/css/'
 					src: ['*.sass', '*.scss']
 					dest: '<%= pkg.path.dist_resume %>dist/css/'
 					ext: '.css'
@@ -121,6 +121,6 @@ module.exports = (grunt) ->
 	require('load-grunt-tasks') grunt, scope: 'devDependencies'
 
 	# 同步输出的 resume 文件
-	grunt.registerTask 'default', ['copy:index', 'sass', 'watch']
+	grunt.registerTask 'default', ['sass', 'watch']
 
 
