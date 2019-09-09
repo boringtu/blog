@@ -65,15 +65,12 @@ header {
 
 .description {
   padding: 20px 12px 10px;
-  position: relative; }
+  position: relative;
+  display: flex; }
   .description img {
-    position: absolute;
-    z-index: 1;
-    top: 20px;
-    left: 12px;
     border-radius: 50%; }
   .description p {
-    padding: 8px 12px 12px 130px;
+    padding: 8px 12px 12px 40px;
     font-size: 12px; }
     .description p span.line {
       display: block;
@@ -151,8 +148,7 @@ header {
   .widget .skillBox {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 45px; }
+    padding-top: 20px; }
     .widget .skillBox > div {
       width: 50%; }
       .widget .skillBox > div + div {
@@ -162,7 +158,8 @@ header {
       align-items: center;
       justify-content: space-between; }
       .widget .skillBox .item .skillName {
-        font-size: 14px; }
+        font-size: 14px;
+        line-height: 16px; }
       .widget .skillBox .item .skillValue {
         height: 8px;
         width: 120px;

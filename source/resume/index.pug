@@ -31,8 +31,79 @@ html
 		.page
 			include src/templates/head.pug
 
+			.widget(data-type="projects_experience")
+				h2 SKILLS
+				.skillBox
+					div
+						.item(data-percent="9")
+							.skillName
+								| -&nbsp;
+								strong JavaScript
+							.skillValue: .cover
+						.item(data-percent="10")
+							.skillName
+								| -&nbsp;
+								strong CoffeeScript
+							.skillValue: .cover
+						.item(data-percent="7")
+							.skillName
+								| -&nbsp;
+								strong 微信小程序
+							.skillValue: .cover
+						.item(data-percent="7")
+							.skillName
+								| -&nbsp;
+								strong NodeJS
+							.skillValue: .cover
+						.item(data-percent="8")
+							.skillName
+								| -&nbsp;
+								strong Nginx
+							.skillValue: .cover
+					div
+						.item(data-percent="9")
+							.skillName
+								| -&nbsp;
+								strong VueJS
+							.skillValue: .cover
+						.item(data-percent="7")
+							.skillName
+								| -&nbsp;
+								strong Vim
+							.skillValue: .cover
+						.item(data-percent="8")
+							.skillName
+								| -&nbsp;
+								strong OS X
+							.skillValue: .cover
+						.item(data-percent="7")
+							.skillName
+								| -&nbsp;
+								strong Linux
+							.skillValue: .cover
+						.item(data-percent="7")
+							.skillName
+								| -&nbsp;
+								strong Shell
+							.skillValue: .cover
+
 			.widget(data-type="work_experience")
 				h2 WORK EXPERIENCE
+				.item
+					.leftPanel
+						h3.widgetTitle 世纪恒通
+						p.widgetSubtitle
+							| 深圳
+							span.fa.fa-map-marker
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端负责人
+							span.title.section 2019.04·至今
+						p.content.
+							负责所有前端项目的开发工作（纯前端和小程序。含小程序通过SDK操作蓝牙设备）<br>
+							前端项目主要开发人员<br>
 				.item
 					.leftPanel
 						h3.widgetTitle 阿尔法创意
@@ -44,7 +115,7 @@ html
 						.line
 						.clear
 							span.title.position 前端负责人
-							span.title.section 2018.02·至今
+							span.title.section 2018.02·2019.04
 						p.content.
 							前端项目框架的搭建（Vue-Cli3）<br>
 							负责所有前端项目的开发工作<br>
@@ -118,6 +189,13 @@ html
 							消息系统前端模块开发与接口整合联调工作<br>
 							新版搜索模块的前端设计及开发
 
+		//- Page 2
+		.page
+			include src/templates/head.pug
+
+			.widget(data-type="work_experience")
+				h2 WORK EXPERIENCE
+
 				.item
 					.leftPanel
 						h3.widgetTitle 国家电网
@@ -136,64 +214,24 @@ html
 							“国家电网 输变电设备状态信息高级应用系统”前端框架设计与开发<br>
 							“国家电网 河南尖山II期气象监测系统”全栈的设计与开发
 
-
-			.widget(data-type="projects_experience")
-				h2 SKILLS
-				.skillBox
-					div
-						.item(data-percent="9")
-							.skillName
-								| -&nbsp;
-								strong JavaScript
-							.skillValue: .cover
-						.item(data-percent="10")
-							.skillName
-								| -&nbsp;
-								strong CoffeeScript
-							.skillValue: .cover
-						.item(data-percent="7")
-							.skillName
-								| -&nbsp;
-								strong NodeJS
-							.skillValue: .cover
-						.item(data-percent="8")
-							.skillName
-								| -&nbsp;
-								strong Nginx
-							.skillValue: .cover
-						.item(data-percent="7")
-							.skillName
-								| -&nbsp;
-								strong Shell
-							.skillValue: .cover
-					div
-						.item(data-percent="9")
-							.skillName
-								| -&nbsp;
-								strong VueJS
-							.skillValue: .cover
-						.item(data-percent="7")
-							.skillName
-								| -&nbsp;
-								strong Vim
-							.skillValue: .cover
-						.item(data-percent="8")
-							.skillName
-								| -&nbsp;
-								strong OS X
-							.skillValue: .cover
-						.item(data-percent="7")
-							.skillName
-								| -&nbsp;
-								strong Linux
-							.skillValue: .cover
-
-		//- Page 2
-		.page
-			include src/templates/head.pug
-
 			.widget(data-type="projects_experience")
 				h2 PROJECTS EXPERIENCE
+				.item
+					.leftPanel
+						h3.widgetTitle 微ETC（Web & 小程序）
+						p.widgetSubtitle
+							| 世纪恒通
+							span.fa.fa-building
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 深圳前端负责人
+							span.title.section 2019.04·至今
+						p.content.
+							JavaScript + Pug + Stylus + Vue + Webpack + Grunt<br>
+							主业务流程的开发和改版<br>
+							小程序通过SDK与OBU设备交互，对接天津高速，实现设备的二次发行与激活（在文档繁杂且不全的前提下）<br>
 				.item
 					.leftPanel
 						h3.widgetTitle 客服系统
@@ -258,6 +296,13 @@ html
 							CoffeeScript + Pug + Sass + Backbone + Grunt<br>
 							产品整体升级，重新开发第二版<br>
 							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
+
+		//- Page 3
+		.page
+			include src/templates/head.pug
+
+			.widget(data-type="projects_experience")
+				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 运营支撑平台（V1 & V2）
@@ -304,13 +349,6 @@ html
 						p.content.
 							JavaScript + Smart + Less + Backbone + Grunt<br>
 							主要承担孔夫子旧书网消息系统前端模块开发和与其他各个模块整合、新版搜索模块前端部分的设计和开发工作，以及保证整个系统对IE6+的兼容性。根据后台提供的接口以及数据结构、后台搜索服务提供的数据结构，还有前端的功能，设计和开发前端框架，以及后续的二次开发工作。
-
-		//- Page 3
-		.page
-			include src/templates/head.pug
-
-			.widget(data-type="projects_experience")
-				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 国网输变电设备状态信息高级应用系统
@@ -368,19 +406,23 @@ html
 						p.content.
 							承担平台系统的整个查询模块、待办信息模块、已处理业务状态跟踪、凭证生成、用户权限以及总部与网省间数据的下达和同步模块的设计、开发和维护工作。
 
+		//- Page 4
+		.page
+			include src/templates/head.pug
+
 			.widget(data-type="tech_stack")
 				h2 TECHNOLOGY STACK #[i （插件、工具库等已省略）]
 				.box
 					ul
 						li JavaScript
 						li CoffeeScript
+						li 微信小程序
 						li VueJS(Vue-Cli3)
 						li Nginx
 						li NodeJS
 						li PM2
 						li Webpack
 						li Grunt
-						li Backbone
 					ul
 						li Shell
 						li Vim
@@ -399,7 +441,6 @@ html
 						li Docker #[i # 学习中]
 						li Cocos2d-JS #[i # 学习中]
 						li Python #[i # 学习中]
-						li C++ #[i # 学习中]
 						li Raspberry Pi #[i # 折腾中]
 
 			.widget(data-type="description")
@@ -407,3 +448,4 @@ html
 				.box
 					p 选择前端是因为 JavaScript 的弱语言先天优势，无论是执行效率，还是维护、扩展性，都很依赖编写者的水平，可玩度很高。后来出了 NodeJS，发现可以玩的东西更多了，做过 Express 的项目，写过 Shell 脚本，目前在折腾 Raspberry Pi。
 					p 一直走在通往全栈攻城师的不归路上，喜欢挑战自我。
+
