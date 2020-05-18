@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  font-size: 1.75px;
+  -webkit-text-size-adjust: none; }
+
 body {
   font-family: Arial, "微软雅黑"; }
 
@@ -12,84 +16,84 @@ a {
   float: right; }
 
 .page {
-  height: 976px;
-  width: 600px;
-  margin: 40px auto 80px;
-  padding: 30px 40px; }
+  height: 1485px;
+  width: 1050px;
+  margin: 40rem auto 80rem;
+  padding: 30rem 40rem; }
   .page:first-child {
     margin-top: 0; }
   .page:last-child {
     margin-bottom: 0; }
 
 header {
-  border-bottom: 3px solid #636363; }
+  border-bottom: 3rem solid #636363; }
   header .leftPanel {
-    padding-left: 10px; }
+    padding-left: 10rem; }
     header .leftPanel h1 {
-      font-size: 21px;
-      line-height: 21px;
+      font-size: 21rem;
+      line-height: 21rem;
       font-weight: normal;
-      margin-top: 4px; }
+      margin-top: 4rem; }
     header .leftPanel h2 {
       color: #808080;
-      font-size: 12px;
-      line-height: 20px;
-      padding-bottom: 4px; }
+      font-size: 12rem;
+      line-height: 20rem;
+      padding-bottom: 4rem; }
   header .rightPanel {
-    padding-right: 6px;
-    font-size: 12px;
-    line-height: 12px; }
+    padding-right: 6rem;
+    font-size: 12rem;
+    line-height: 12rem; }
     header .rightPanel p {
       text-align: right;
       position: relative;
-      line-height: 15px; }
+      line-height: 15rem; }
       header .rightPanel p > * {
         vertical-align: middle;
         float: right; }
       header .rightPanel p .fa {
         text-align: center;
-        width: 18px;
+        width: 18rem;
         position: absolute;
         right: 0; }
       header .rightPanel p .text {
-        padding-right: 18px; }
+        padding-right: 18rem; }
       header .rightPanel p[data-type="mobile"] .fa {
-        font-size: 18px;
-        line-height: 14px; }
+        font-size: 18rem;
+        line-height: 14rem; }
       header .rightPanel p[data-type="email"] .fa {
-        font-size: 14px;
-        line-height: 14px; }
+        font-size: 14rem;
+        line-height: 14rem; }
       header .rightPanel p[data-type="blog"] .fa {
-        font-size: 14px;
-        line-height: 12px; }
+        font-size: 14rem;
+        line-height: 12rem; }
 
 .description {
-  padding: 20px 12px 10px;
+  padding: 20rem 12rem 10rem;
   position: relative;
   display: flex; }
   .description img {
     border-radius: 50%; }
   .description p {
-    padding: 8px 12px 12px 40px;
-    font-size: 12px; }
+    padding: 8rem 12rem 12rem 40rem;
+    font-size: 12rem; }
     .description p span.line {
       display: block;
-      height: 3px;
-      width: 28px;
+      height: 3rem;
+      width: 28rem;
       background: #636363;
-      margin-bottom: 8px; }
+      margin-bottom: 8rem; }
 
 .widget {
-  padding-bottom: 20px; }
+  padding-bottom: 20rem; }
   .widget h2 {
     color: #999;
-    border-bottom: 2px solid #dfdfdf;
-    padding-left: 8px;
-    font-size: 15px; }
+    border-bottom: 2rem solid #dfdfdf;
+    padding-left: 8rem;
+    font-size: 15rem; }
     .widget h2 i {
       font-style: italic;
       font-weight: normal;
-      font-size: 12px;
+      font-size: 12rem;
       float: right;
       color: #aaa; }
   .widget .item {
@@ -97,12 +101,12 @@ header {
     justify-content: space-between; }
     .widget .item .leftPanel {
       width: 34%;
-      padding-top: 20px;
+      padding-top: 20rem;
       position: relative; }
       .widget .item .leftPanel .line {
         width: 86%;
-        height: 1px;
-        border-width: 0 0 1px 0;
+        height: 1rem;
+        border-width: 0 0 1rem 0;
         border-color: #e2e2e2;
         border-style: dashed;
         bottom: 0;
@@ -110,28 +114,28 @@ header {
         z-index: 1; }
     .widget .item .rightPanel {
       width: 66%;
-      padding-top: 12px; }
+      padding-top: 12rem; }
       .widget .item .rightPanel .line {
         width: 100%;
-        height: 1px;
-        border-width: 0 0 1px 0;
+        height: 1rem;
+        border-width: 0 0 1rem 0;
         border-color: #e2e2e2;
         border-style: dashed;
-        margin-top: 10px;
+        margin-top: 10rem;
         position: relative;
-        top: 10px; }
+        top: 10rem; }
     .widget .item .widgetTitle {
-      font-size: 16px;
-      padding: 0 8px; }
+      font-size: 16rem;
+      padding: 0 8rem; }
     .widget .item .widgetSubtitle {
-      font-size: 12px;
+      font-size: 12rem;
       color: #aaa;
-      padding-left: 8px;
-      padding-bottom: 12px; }
+      padding-left: 8rem;
+      padding-bottom: 12rem; }
       .widget .item .widgetSubtitle .fa {
-        margin-left: 4px; }
+        margin-left: 4rem; }
     .widget .item .title {
-      font-size: 13px;
+      font-size: 13rem;
       position: relative;
       background: #fff; }
     .widget .item .position {
@@ -142,33 +146,33 @@ header {
       float: right;
       color: #333; }
     .widget .item .content {
-      font-size: 12px;
+      font-size: 12rem;
       color: #666;
-      letter-spacing: -0.5px; }
+      letter-spacing: -0.5rem; }
   .widget .skillBox {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px; }
+    padding-top: 20rem; }
     .widget .skillBox > div {
       width: 50%; }
       .widget .skillBox > div + div {
-        margin-left: 24px; }
+        margin-left: 24rem; }
     .widget .skillBox .item {
       display: flex;
       align-items: center;
       justify-content: space-between; }
       .widget .skillBox .item .skillName {
-        font-size: 14px;
-        line-height: 16px; }
+        font-size: 14rem;
+        line-height: 16rem; }
       .widget .skillBox .item .skillValue {
-        height: 8px;
-        width: 120px;
-        border-radius: 4px;
+        height: 8rem;
+        width: 120rem;
+        border-radius: 4rem;
         background: #e8e8e8; }
         .widget .skillBox .item .skillValue .cover {
           height: 100%;
           background: #30a898;
-          border-radius: 4px; }
+          border-radius: 4rem; }
       .widget .skillBox .item[data-percent="1"] .cover {
         width: 10%; }
       .widget .skillBox .item[data-percent="2"] .cover {
@@ -190,26 +194,26 @@ header {
       .widget .skillBox .item[data-percent="10"] .cover {
         width: 100%; }
   .widget[data-type="projects_experience"] .widgetTitle {
-    font-size: 14px; }
+    font-size: 14rem; }
   .widget[data-type="tech_stack"] .box {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px; }
+    padding-top: 20rem; }
   .widget[data-type="tech_stack"] ul {
     width: 33.33%; }
     .widget[data-type="tech_stack"] ul li {
       list-style: inside circle;
-      font-size: 14px;
-      line-height: 20px; }
+      font-size: 14rem;
+      line-height: 20rem; }
       .widget[data-type="tech_stack"] ul li i {
         font-style: italic;
         color: #aaa;
-        font-size: 12px; }
+        font-size: 12rem; }
   .widget[data-type="description"] .box {
-    padding-top: 20px; }
+    padding-top: 20rem; }
   .widget[data-type="description"] p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14rem;
+    line-height: 20rem;
     text-indent: 2em; }
 
 /*# sourceMappingURL=style.css.map */
