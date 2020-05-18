@@ -1,6 +1,11 @@
 // @function px2rem($px) {
 // 	@return 0;
 // }
+// 注：
+// 页面当初是根据 600 x 976 的尺寸做的，现在发现 chrome 生成 pdf 尺寸变为：1050 x 1485
+// 考虑为了适应同比例不同尺寸的 A4 纸像素，长度属性的数字部分不变，单位换成 rem
+// html 的 font-size 计算方式：合适的 A4 width pixel / 600
+// 比如现在的：1050 / 600 = 1.75px
 html
 	// font-size: 13.3333vw
 	font-size: 1.75px
