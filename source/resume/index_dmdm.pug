@@ -102,7 +102,7 @@ html
 							span.title.position 深圳前端负责人
 							span.title.section 2019.04·至今
 						p.content.
-							负责所有前端项目的开发工作（纯前端和小程序。含小程序通过SDK操作蓝牙设备）<br>
+							负责所有前端项目的开发工作（Web页面和小程序。含小程序通过SDK操作OBU设备，以及与各个服务商对接的ETC办理流程）<br>
 							前端项目主要开发人员<br>
 				.item
 					.leftPanel
@@ -127,9 +127,9 @@ html
 
 				.item
 					.leftPanel
-						h3.widgetTitle 易商云
+						h3.widgetTitle 点点科技
 						p.widgetSubtitle
-							| 厦门
+							| 深圳
 							span.fa.fa-map-marker
 						.line
 					.rightPanel
@@ -138,8 +138,7 @@ html
 							span.title.position 前端负责人
 							span.title.section 2015.07·2016.10
 						p.content.
-							负责pc端两个项目前端框架的搭建及后续二次开发<br>
-							协助后台开发人员排查和解决问题
+							负责进销存、点点商家、点点快富等项目的重构和开发
 
 				.item
 					.leftPanel
@@ -154,31 +153,7 @@ html
 							span.title.position 前端负责人
 							span.title.section 2014.03·2015.07
 						p.content.
-							电信翼比特（宽带提速）项目的前端设计和开发
-
-				.item
-					.leftPanel
-						h3.widgetTitle 孔网时代
-						p.widgetSubtitle
-							| 北京
-							span.fa.fa-map-marker
-						.line
-					.rightPanel
-						.line
-						.clear
-							span.title.position 前端工程师
-							span.title.section 2013.03·2014.02
-						p.content.
-							消息系统前端模块开发与接口整合联调工作<br>
-							新版搜索模块的前端设计及开发
-
-		//- Page 2
-		.page
-			include src/templates/head.pug
-
-			.widget(data-type="work_experience")
-				h2 WORK EXPERIENCE
-
+							电信翼比特（宽带提速），以及 Life-Plan 等项目的前端设计和开发
 				.item
 					.leftPanel
 						h3.widgetTitle 国家电网
@@ -190,12 +165,17 @@ html
 						.line
 						.clear
 							span.title.position 前端工程师 & Java工程师
-							span.title.section 2010.09·2013.03
+							span.title.section 2010.09·2014.03
 						p.content.
 							“国家电网 财务集约化 协同平台系统”的全栈开发工作<br>
 							“国家电网 财务易用化 财务工作台”的协助开发与维护工作<br>
 							“国家电网 输变电设备状态信息高级应用系统”前端框架设计与开发<br>
 							“国家电网 河南尖山II期气象监测系统”全栈的设计与开发
+
+
+		//- Page 2
+		.page
+			include src/templates/head.pug
 
 			.widget(data-type="projects_experience")
 				h2 PROJECTS EXPERIENCE
@@ -214,7 +194,7 @@ html
 						p.content.
 							JavaScript + Pug + Stylus + Vue + Webpack + Grunt<br>
 							数个版本的 Web & 小程序 的主业务流程的开发和改版<br>
-							小程序通过SDK与OBU设备交互，对接天津、山东高速，实现【多设备厂商 & 多卡商】设备的二次发行与激活（在文档繁杂、不全，而且还经常有错误的前提下完成）<br>
+							小程序通过SDK与OBU设备交互，对接天津、山东、青海、内蒙、湖南、黑龙江等高速，实现【多设备厂商 & 多卡商】设备的二次发行与激活流程（在文档繁杂、不全，而且厂家文档和SDK还经常有错误的前提下完成）<br>
 				.item
 					.leftPanel
 						h3.widgetTitle 客服系统
@@ -244,7 +224,7 @@ html
 						.line
 						.clear
 							span.title.position 前端负责人
-							span.title.section 2018.03·2019.01
+							span.title.section 2018.03·2019.04
 						p.content.
 							CoffeeScript + ES6 + Pug + Sass + Vue + Webpack<br>
 							负责游戏平台移动Web端项目的开发和重构，以及主要玩法的实现。
@@ -263,6 +243,22 @@ html
 						p.content.
 							CoffeeScript + Pug + doT + Sass + Grunt + NodeJS + Express<br>
 							负责前端游戏平台框架的搭建（包括Web端与app端）、主要游戏玩法的实现、在现有前端项目基础上新增Node后端项目（框架搭建和开发），以及负责技术部各组（前、后端，UI，运维）间的协作工作、分析项目部署及运行时出现问题的原因并以解决或提供解决方案等工作。
+				.item
+					.leftPanel
+						h3.widgetTitle 进销存、点点商家、点点快富
+						p.widgetSubtitle
+							| 点点科技
+							span.fa.fa-building
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端负责人
+							span.title.section 2015.07·2016.10
+						p.content.
+							CoffeeScript + Pug + Sass + Backbone + Grunt<br>
+							产品整体重构<br>
+							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
 
 		//- Page 3
 		.page
@@ -270,39 +266,22 @@ html
 
 			.widget(data-type="projects_experience")
 				h2 PROJECTS EXPERIENCE
-				.item
-					.leftPanel
-						h3.widgetTitle 易商中心（V1 & V2）
-						p.widgetSubtitle
-							| 易商云
-							span.fa.fa-building
-						.line
-					.rightPanel
-						.line
-						.clear
-							span.title.position 前端负责人
-							span.title.section 2016.03·2016.10
-						p.content.
-							CoffeeScript + Pug + Sass + Backbone + Grunt<br>
-							产品整体升级，重新开发第二版<br>
-							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
 
 				.item
 					.leftPanel
-						h3.widgetTitle 运营支撑平台（V1 & V2）
+						h3.widgetTitle Life-Plan
 						p.widgetSubtitle
-							| 易商云
+							| 爱唯光石
 							span.fa.fa-building
 						.line
 					.rightPanel
 						.line
 						.clear
 							span.title.position 前端负责人
-							span.title.section 2015.07·2016.07
+							span.title.section 2014.10·2015.07
 						p.content.
 							CoffeeScript + Pug + Sass + Backbone + Grunt<br>
-							产品整体升级，重新开发第二版<br>
-							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
+							负责 LP 项目的前端架构设计，和大部分功能开发，参与接口设计等工作。
 				.item
 					.leftPanel
 						h3.widgetTitle 电信翼比特管理中心
@@ -320,21 +299,6 @@ html
 							负责电信翼比特（宽带提速）项目的前端设计和开发，以及其他项目的开发和维护工作。
 				.item
 					.leftPanel
-						h3.widgetTitle 孔夫子旧书网
-						p.widgetSubtitle
-							| 孔网时代
-							span.fa.fa-building
-						.line
-					.rightPanel
-						.line
-						.clear
-							span.title.position 前端工程师
-							span.title.section 2013.03·2014.03
-						p.content.
-							JavaScript + Smart + Less + Backbone + Grunt<br>
-							主要承担孔夫子旧书网消息系统前端模块开发和与其他各个模块整合、新版搜索模块前端部分的设计和开发工作，以及保证整个系统对IE6+的兼容性。根据后台提供的接口以及数据结构、后台搜索服务提供的数据结构，还有前端的功能，设计和开发前端框架，以及后续的二次开发工作。
-				.item
-					.leftPanel
 						h3.widgetTitle 国网输变电设备状态信息高级应用系统
 						p.widgetSubtitle
 							| 国家电网
@@ -344,8 +308,9 @@ html
 						.line
 						.clear
 							span.title.position 前端工程师 & Java工程师
-							span.title.section 2012.05·2013.03
+							span.title.section 2012.08·2014.03
 						p.content.
+							JavaScript + Smart + Less + Backbone + Grunt<br>
 							设计并开发针对性系统Web框架，承担对系统Web方面升级及维护工作，协助各子模块的指导、开发及调试工作，协助开发输变电设备状态评价、缺陷和故障诊断等模块的前台和后台系统。
 				.item
 					.leftPanel
@@ -358,16 +323,9 @@ html
 						.line
 						.clear
 							span.title.position 前端工程师 & Java工程师
-							span.title.section 2011.11·2012.03
+							span.title.section 2012.03·2012.10
 						p.content.
 							根据需求文档以及项目经理的意见和建议，独立设计和开发（包括Web前端框架设计、页面样式设计、后台逻辑代码、数据库设计）。
-
-		//- Page 4
-		.page
-			include src/templates/head.pug
-
-			.widget(data-type="projects_experience")
-				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 国网财务易用化工作台
@@ -379,7 +337,7 @@ html
 						.line
 						.clear
 							span.title.position 前端工程师 & Java工程师
-							span.title.section 2011.10·2011.11
+							span.title.section 2011.10·2012.03
 						p.content.
 							页面及后台各部分的功能设计、开发和调试工作，以及整合项目的调试工作。
 				.item
@@ -396,6 +354,10 @@ html
 							span.title.section 2010.09·2011.10
 						p.content.
 							承担平台系统的整个查询模块、待办信息模块、已处理业务状态跟踪、凭证生成、用户权限以及总部与网省间数据的下达和同步模块的设计、开发和维护工作。
+
+		//- Page 4
+		.page
+			include src/templates/head.pug
 
 			.widget(data-type="tech_stack")
 				h2 TECHNOLOGY STACK #[i （插件、工具库等已省略）]
@@ -434,5 +396,5 @@ html
 				h2 DESCRIPTION
 				.box
 					p 选择前端是因为 JavaScript 的弱语言先天优势，无论是执行效率，还是维护、扩展性，都很依赖编写者的水平，可玩度很高。后来出了 NodeJS，发现可以玩的东西更多了，做过 Express 的项目，写过 Shell 脚本，目前在折腾 Raspberry Pi。
-					p 一直走在通往全栈攻城师的不归路上，喜欢挑战自我。
+					p Bug率历来都是在所在公司中最低的。追求代码执行效率和编码美观，对编码有强迫症。
 
