@@ -102,25 +102,9 @@ html
 							span.title.position 深圳前端负责人
 							span.title.section 2019.04·至今
 						p.content.
-							负责所有前端项目的开发工作（纯前端和小程序。含小程序通过SDK操作蓝牙设备）<br>
-							前端项目主要开发人员<br>
-				.item
-					.leftPanel
-						h3.widgetTitle 阿尔法创意
-						p.widgetSubtitle
-							| 深圳
-							span.fa.fa-map-marker
-						.line
-					.rightPanel
-						.line
-						.clear
-							span.title.position 前端负责人
-							span.title.section 2018.02·2019.04
-						p.content.
-							前端项目框架的搭建（Vue-Cli3）<br>
 							负责所有前端项目的开发工作<br>
-							前端项目主要开发人员<br>
-							参与接口的设计与服务器的环境配置
+							小程序操作OBU设备，以及与各个服务商对接的ETC办理流程<br>
+							车主云商户智能管理系统v1.6版本前端底层框架搭建、权限系统的设计与开发
 				.item
 					.leftPanel
 						h3.widgetTitle 创联互动
@@ -132,10 +116,10 @@ html
 						.line
 						.clear
 							span.title.position 前端负责人 & 技术总监
-							span.title.section 2016.11·2018.02
+							span.title.section 2016.11·2019.04
 						p.content.
 							主要游戏算法的实现（用到交并集，阶乘，排列组合等基本算法）<br>
-							前端项目框架的搭建（Backbone + Grunt）<br>
+							前端项目框架的搭建（Backbone + Grunt）、（Vue-Cli3 + Webpack）<br>
 							前端项目主要开发人员<br>
 							分析项目所有模块中出现问题的原因并加以解决或提供解决方案<br>
 							服务器环境的配置（系统搭建，PM2，Nginx，NodeJS等）<br>
@@ -171,7 +155,14 @@ html
 							span.title.position 前端负责人
 							span.title.section 2014.03·2015.07
 						p.content.
-							电信翼比特（宽带提速）项目的前端设计和开发
+							电信翼比特（宽带提速），以及 Life-Plan 等项目的前端设计和开发
+
+		//- Page 2
+		.page
+			include src/templates/head.pug
+
+			.widget(data-type="work_experience")
+				h2 WORK EXPERIENCE
 
 				.item
 					.leftPanel
@@ -186,15 +177,8 @@ html
 							span.title.position 前端工程师
 							span.title.section 2013.03·2014.02
 						p.content.
-							消息系统前端模块开发与接口整合联调工作<br>
-							新版搜索模块的前端设计及开发
-
-		//- Page 2
-		.page
-			include src/templates/head.pug
-
-			.widget(data-type="work_experience")
-				h2 WORK EXPERIENCE
+							消息系统前端开发<br>
+							搜索引擎的前端设计及开发
 
 				.item
 					.leftPanel
@@ -218,6 +202,21 @@ html
 				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
+						h3.widgetTitle 车主云商户智能管理系统v1.6
+						p.widgetSubtitle
+							| 世纪恒通
+							span.fa.fa-building
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 深圳前端负责人
+							span.title.section 2020.09·2020.10
+						p.content.
+							JavaScript + Pug + Stylus + Sass + Vue + Webpack<br>
+							前端项目技术栈选型、底层框架搭建、权限系统的设计与开发，以及其他一些页面的开发
+				.item
+					.leftPanel
 						h3.widgetTitle 微ETC（Web & 小程序）
 						p.widgetSubtitle
 							| 世纪恒通
@@ -227,16 +226,16 @@ html
 						.line
 						.clear
 							span.title.position 深圳前端负责人
-							span.title.section 2019.04·至今
+							span.title.section 2019.04·2020.05
 						p.content.
 							JavaScript + Pug + Stylus + Vue + Webpack + Grunt<br>
-							主业务流程的开发和改版<br>
-							小程序通过SDK与OBU设备交互，对接天津高速，实现设备的二次发行与激活（在文档繁杂且不全的前提下）<br>
+							数个版本的 Web & 小程序 的主业务流程的开发和改版<br>
+							小程序通过SDK与OBU设备交互，对接天津、山东、青海、内蒙、湖南、黑龙江等高速，实现【多设备厂商 & 多卡商】设备的二次发行与激活流程（在文档繁杂、不全，而且厂家文档和SDK还经常有错误的前提下完成）
 				.item
 					.leftPanel
 						h3.widgetTitle 客服系统
 						p.widgetSubtitle
-							| 阿尔法创意
+							| 创联互动
 							span.fa.fa-building
 						.line
 					.rightPanel
@@ -247,21 +246,26 @@ html
 						p.content.
 							CoffeeScript + Pug + Sass + Vue + Webpack + Nginx<br>
 							连接客服与用户的IM系统，附带内部协同等功能，包括客服、分组、权限等元素的CRUD功能。<br>
-							客服端与用户端均由Vue-Cli3创建。<br>
-							后期因客户要求，额外新增支持IE的用户端项目。<br>
 							项目搭建、IM功能闭环，以及鉴权功能等均由本人独立完成，后端接口与WebSocket对接协议主要设计者。
+
+		//- Page 3
+		.page
+			include src/templates/head.pug
+
+			.widget(data-type="projects_experience")
+				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 游戏平台
 						p.widgetSubtitle
-							| 阿尔法创意
+							| 创联互动
 							span.fa.fa-building
 						.line
 					.rightPanel
 						.line
 						.clear
 							span.title.position 前端负责人
-							span.title.section 2018.03·2019.01
+							span.title.section 2018.03·2019.04
 						p.content.
 							CoffeeScript + ES6 + Pug + Sass + Vue + Webpack<br>
 							负责游戏平台移动Web端项目的开发和重构，以及主要玩法的实现。
@@ -297,12 +301,6 @@ html
 							产品整体升级，重新开发第二版<br>
 							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
 
-		//- Page 3
-		.page
-			include src/templates/head.pug
-
-			.widget(data-type="projects_experience")
-				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 运营支撑平台（V1 & V2）
@@ -319,6 +317,28 @@ html
 							CoffeeScript + Pug + Sass + Backbone + Grunt<br>
 							产品整体升级，重新开发第二版<br>
 							承担项目前端框架的设计、搭建及开发，并协助定制接口规范，以及协助后台人员解决后台技术难点。
+				.item
+					.leftPanel
+						h3.widgetTitle Life-Plan
+						p.widgetSubtitle
+							| 爱唯光石
+							span.fa.fa-building
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端负责人
+							span.title.section 2014.10·2015.07
+						p.content.
+							CoffeeScript + Pug + Sass + Backbone + Grunt<br>
+							负责 LP 项目的前端架构设计，和大部分功能开发，参与接口设计等工作。
+
+		//- Page 4
+		.page
+			include src/templates/head.pug
+
+			.widget(data-type="projects_experience")
+				h2 PROJECTS EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 电信翼比特管理中心
@@ -362,6 +382,7 @@ html
 							span.title.position 前端工程师 & Java工程师
 							span.title.section 2012.05·2013.03
 						p.content.
+							JavaScript + Smart + Less + Backbone + Grunt<br>
 							设计并开发针对性系统Web框架，承担对系统Web方面升级及维护工作，协助各子模块的指导、开发及调试工作，协助开发输变电设备状态评价、缺陷和故障诊断等模块的前台和后台系统。
 				.item
 					.leftPanel
@@ -446,6 +467,5 @@ html
 			.widget(data-type="description")
 				h2 DESCRIPTION
 				.box
-					p 选择前端是因为 JavaScript 的弱语言先天优势，无论是执行效率，还是维护、扩展性，都很依赖编写者的水平，可玩度很高。后来出了 NodeJS，发现可以玩的东西更多了，做过 Express 的项目，写过 Shell 脚本，目前在折腾 Raspberry Pi。
-					p 一直走在通往全栈攻城师的不归路上，喜欢挑战自我。
-
+					p 选择前端是因为 JavaScript 的弱语言先天优势，无论是执行效率，还是维护、扩展性，都很依赖编写者的水平，可玩度很高。后来出了 NodeJS，发现可以玩的东西更多了，做过 Express 的项目，写过 Shell 脚本，折腾过 Raspberry Pi。
+					p Bug率历来都是在所在公司中最低的。追求代码执行效率和编码美观，对编码有强迫症。
