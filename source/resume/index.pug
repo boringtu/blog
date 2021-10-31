@@ -40,6 +40,11 @@ html
 								| -&nbsp;
 								strong JavaScript
 							.skillValue: .cover
+						.item(data-percent="9")
+							.skillName
+								| -&nbsp;
+								strong TypeScript
+							.skillValue: .cover
 						.item(data-percent="10")
 							.skillName
 								| -&nbsp;
@@ -61,6 +66,11 @@ html
 								strong Nginx
 							.skillValue: .cover
 					div
+						.item(data-percent="8")
+							.skillName
+								| -&nbsp;
+								strong React
+							.skillValue: .cover
 						.item(data-percent="9")
 							.skillName
 								| -&nbsp;
@@ -91,6 +101,23 @@ html
 				h2 WORK EXPERIENCE
 				.item
 					.leftPanel
+						h3.widgetTitle 紫讯科技
+						p.widgetSubtitle
+							| 福州
+							span.fa.fa-map-marker
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端工程师
+							span.title.section 2021.06·至今
+						p.content.
+							Chrome插件开发<br>
+							主要负责 RPA（机器人流程自动化-Robotic Process Automation）设计器和应用助手<br>
+							以及云账房管理系统与在各大电商（Amazon等）和各大支付平台（网易支付、payoneer等）页面数据爬取
+
+				.item
+					.leftPanel
 						h3.widgetTitle 世纪恒通
 						p.widgetSubtitle
 							| 深圳
@@ -100,11 +127,12 @@ html
 						.line
 						.clear
 							span.title.position 深圳前端负责人
-							span.title.section 2019.04·至今
+							span.title.section 2019.04·2021.06
 						p.content.
 							负责所有前端项目的开发工作<br>
 							小程序操作 OBU 设备，以及与各服务商对接的 ETC 办理流程<br>
 							车主云商户智能管理系统（MMS）v2.0 版本前端底层框架搭建、菜单 & 功能权限系统的设计与开发，以及系统管理 & 工作台绝大部分模块的开发工作
+
 				.item
 					.leftPanel
 						h3.widgetTitle 创联互动
@@ -125,6 +153,13 @@ html
 							服务器环境的配置（系统搭建，PM2，Nginx，NodeJS等）<br>
 							在现有前端项目基础上扩展 NodeJS 后端模块<br>
 							负责前、后端 & 服务器技术选型、项目统筹，以及技术部各组间的协作工作
+
+		//- Page 2
+		.page
+			//-include src/templates/head.pug
+
+			.widget(data-type="work_experience")
+				h2 WORK EXPERIENCE
 
 				.item
 					.leftPanel
@@ -156,13 +191,6 @@ html
 							span.title.section 2014.03·2015.07
 						p.content.
 							电信翼比特（宽带提速）等项目的前端设计和开发
-
-		//- Page 2
-		.page
-			//-include src/templates/head.pug
-
-			.widget(data-type="work_experience")
-				h2 WORK EXPERIENCE
 
 				.item
 					.leftPanel
@@ -202,6 +230,38 @@ html
 				h2 PROJECT EXPERIENCE
 				.item
 					.leftPanel
+						h3.widgetTitle 云账房
+						p.widgetSubtitle
+							| 紫讯科技
+							span.fa.fa-building
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端工程师
+							span.title.section 2021.10·至今
+						p.content.
+							TypeScript + Scss + React + Mobx + Chrome插件<br>
+							负责云账房管理后台以及运维后台的数个模块的开发，和全项目各功能的维护，以及基于 Chrome 插件的各大电商（Amazon等）和各大支付平台（网易支付、payoneer等）页面数据爬取
+
+				.item
+					.leftPanel
+						h3.widgetTitle RPA 设计器
+						p.widgetSubtitle
+							| 紫讯科技
+							span.fa.fa-building
+						.line
+					.rightPanel
+						.line
+						.clear
+							span.title.position 前端工程师
+							span.title.section 2021.06·2021-10
+						p.content.
+							TypeScript + Scss + React + Recoil + X6 + Chrome插件<br>
+							主要负责基于 X6 引擎的 RPA 元件流程设计器面板的开发，以及围绕 RPA 设计器相关的所有功能的开发（包括 由设计器生成的 DSL 数据与 RPA 播放器的对接、设计器中每个元件属性的编辑等）
+
+				.item
+					.leftPanel
 						h3.widgetTitle 车主云商户智能管理系统（MMS）v2.0
 						p.widgetSubtitle
 							| 世纪恒通
@@ -211,10 +271,11 @@ html
 						.line
 						.clear
 							span.title.position 深圳前端负责人
-							span.title.section 2020.09·至今
+							span.title.section 2020.09·2021.06
 						p.content.
 							CoffeeScript + JavaScript + Pug + Sass + Vue + Webpack<br>
 							前端项目技术栈选型、底层框架搭建、接口设计、权限系统的设计与开发，以及一部分页面的开发
+
 				.item
 					.leftPanel
 						h3.widgetTitle 微ETC（Web & 小程序）
@@ -231,6 +292,14 @@ html
 							JavaScript + Pug + Stylus + Vue + Webpack + Grunt<br>
 							数个版本的 Web & 小程序 的主业务流程的开发和改版<br>
 							小程序通过 SDK 与 OBU 设备交互，对接六省高速，实现【多设备厂商 & 多卡商】设备的二次发行与激活流程（在文档繁杂不全甚至文档有误、SDK 错误频发的情况下实现）
+
+		//- Page 3
+		.page
+			//-include src/templates/head.pug
+
+			.widget(data-type="projects_experience")
+				h2 PROJECT EXPERIENCE
+
 				.item
 					.leftPanel
 						h3.widgetTitle 客服系统
@@ -247,6 +316,7 @@ html
 							CoffeeScript + Pug + Sass + Vue + Webpack + Nginx<br>
 							连接客服与用户的IM系统，附带内部协同等功能，包括客服、分组、权限等元素的 CRUD 功能。<br>
 							项目搭建、IM 功能闭环，以及鉴权功能等均由本人独立完成，后端接口与 WebSocket 对接协议主要设计者。
+
 				.item
 					.leftPanel
 						h3.widgetTitle 游戏平台
@@ -262,6 +332,7 @@ html
 						p.content.
 							CoffeeScript + ES6 + Pug + Sass + Vue + Webpack<br>
 							负责游戏平台移动 Web 端项目的开发和重构，以及主要玩法的实现。
+
 				.item
 					.leftPanel
 						h3.widgetTitle 游戏平台
@@ -277,13 +348,6 @@ html
 						p.content.
 							CoffeeScript + Pug + doT + Sass + Grunt + NodeJS + Express<br>
 							负责前端游戏平台框架的搭建（包括 Web 端与 app 端）、主要游戏玩法的实现、在现有前端项目基础上新增 Node 后端项目（框架搭建和开发），以及负责技术部各组（前、后端，UI，运维）间的协作工作、分析项目部署及运行时出现问题的原因并以解决或提供解决方案等工作。
-
-		//- Page 3
-		.page
-			//-include src/templates/head.pug
-
-			.widget(data-type="projects_experience")
-				h2 PROJECT EXPERIENCE
 
 				.item
 					.leftPanel
@@ -347,6 +411,13 @@ html
 						p.content.
 							JavaScript + Smart + Less + Backbone + Grunt<br>
 							主要承担孔夫子旧书网消息系统前端模块开发和与其他各模块整合、新版搜索模块前端部分的设计和开发工作，以及保证整个系统对IE6+的兼容性。根据后台提供的接口以及数据结构、后台搜索服务提供的数据结构，还有前端的功能，设计和开发前端框架，以及后续的二次开发工作。
+
+		//- Page 4
+		.page
+			//-include src/templates/head.pug
+
+			.widget(data-type="projects_experience")
+				h2 PROJECT EXPERIENCE
 				.item
 					.leftPanel
 						h3.widgetTitle 国网输变电设备状态信息高级应用系统
@@ -405,21 +476,17 @@ html
 						p.content.
 							承担平台系统的整个查询模块、待办信息模块、已处理业务状态跟踪、凭证生成、用户权限以及总部与网省间数据的下达和同步模块的设计、开发和维护工作。
 
-		//- Page 4
-		.page
-			//-include src/templates/head.pug
-
 			.widget(data-type="tech_stack")
 				h2 TECHNOLOGY STACK #[i （插件、工具库等已省略）]
 				.box
 					ul
 						li JavaScript
+						li TypeScript
 						li CoffeeScript
 						li 微信小程序
-						li VueJS(Vue-Cli3)
-						li Nginx
+						li React
+						li VueJS
 						li NodeJS
-						li PM2
 						li Webpack
 						li Grunt
 					ul
@@ -433,10 +500,11 @@ html
 						li Linux
 						li Markdown
 					ul
+						li Nginx
 						li Express
 						li Pug/DoT/Handlebars
 						li Sass/Stylus/Less
-						li React #[i # 学习中]
+						li PM2
 						li Docker #[i # 学习中]
 						li Cocos2d-JS #[i # 学习中]
 						li Python #[i # 学习中]
@@ -445,6 +513,6 @@ html
 			.widget(data-type="description")
 				h2 DESCRIPTION
 				.box
-					p 选择前端是因为 JavaScript 的弱语言先天优势，无论是执行效率，还是可维护性、扩展性，都很依赖编写者的水平，而且可玩度很高。之后出现了 NodeJS，JS 受限于浏览器的情况就不复存在了。做过 Express 的项目，写过 Shell 脚本，折腾过 Raspberry Pi，根据对应的蓝牙协议折腾过各种硬件的功能交互。
+					p 喜欢 JavaScript 的灵活，也同样喜欢 TypeScript 的方便。做过 Express 项目，写过 Shell 脚本，开发过 Chrome 插件，玩过 Raspberry Pi，也折腾过各种硬件。
 					p Bug 率历来都是在所在各公司中最低的。追求代码执行效率和编码美观，对代码有些许强迫症。
 
